@@ -15,7 +15,20 @@
 		7600ADBE24DFD1D200B71FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7600ADBC24DFD1D200B71FA5 /* LaunchScreen.storyboard */; };
 		7600ADC924E041B000B71FA5 /* vctextfields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600ADC824E041B000B71FA5 /* vctextfields.swift */; };
 		7600ADCB24E0566600B71FA5 /* itemsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600ADCA24E0566600B71FA5 /* itemsTextField.swift */; };
+		7600ADD324E0B1DB00B71FA5 /* windowshopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600ADD224E0B1DB00B71FA5 /* windowshopAppTests.swift */; };
+		7600ADDB24E0B21B00B71FA5 /* wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600ADDA24E0B21B00B71FA5 /* wage.swift */; };
+		7600ADDC24E0B4CB00B71FA5 /* wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7600ADDA24E0B21B00B71FA5 /* wage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7600ADD524E0B1DB00B71FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7600ADA624DFD1CE00B71FA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7600ADAD24DFD1CE00B71FA5;
+			remoteInfo = windowshopApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7600ADAE24DFD1CE00B71FA5 /* windowshopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = windowshopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +41,21 @@
 		7600ADBF24DFD1D200B71FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7600ADC824E041B000B71FA5 /* vctextfields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vctextfields.swift; sourceTree = "<group>"; };
 		7600ADCA24E0566600B71FA5 /* itemsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemsTextField.swift; sourceTree = "<group>"; };
+		7600ADD024E0B1DB00B71FA5 /* windowshopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = windowshopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7600ADD224E0B1DB00B71FA5 /* windowshopAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windowshopAppTests.swift; sourceTree = "<group>"; };
+		7600ADD424E0B1DB00B71FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7600ADDA24E0B21B00B71FA5 /* wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7600ADAB24DFD1CE00B71FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7600ADCD24E0B1DB00B71FA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				7600ADB024DFD1CE00B71FA5 /* windowshopApp */,
+				7600ADD124E0B1DB00B71FA5 /* windowshopAppTests */,
 				7600ADAF24DFD1CE00B71FA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				7600ADAE24DFD1CE00B71FA5 /* windowshopApp.app */,
+				7600ADD024E0B1DB00B71FA5 /* windowshopAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +102,7 @@
 		7600ADC524E039E200B71FA5 /* MODEL */ = {
 			isa = PBXGroup;
 			children = (
+				7600ADDA24E0B21B00B71FA5 /* wage.swift */,
 			);
 			path = MODEL;
 			sourceTree = "<group>";
@@ -95,6 +122,15 @@
 				7600ADB524DFD1CE00B71FA5 /* MainVC.swift */,
 			);
 			path = CONTROLLER;
+			sourceTree = "<group>";
+		};
+		7600ADD124E0B1DB00B71FA5 /* windowshopAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7600ADD224E0B1DB00B71FA5 /* windowshopAppTests.swift */,
+				7600ADD424E0B1DB00B71FA5 /* Info.plist */,
+			);
+			path = windowshopAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +153,24 @@
 			productReference = 7600ADAE24DFD1CE00B71FA5 /* windowshopApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7600ADCF24E0B1DB00B71FA5 /* windowshopAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7600ADD724E0B1DB00B71FA5 /* Build configuration list for PBXNativeTarget "windowshopAppTests" */;
+			buildPhases = (
+				7600ADCC24E0B1DB00B71FA5 /* Sources */,
+				7600ADCD24E0B1DB00B71FA5 /* Frameworks */,
+				7600ADCE24E0B1DB00B71FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7600ADD624E0B1DB00B71FA5 /* PBXTargetDependency */,
+			);
+			name = windowshopAppTests;
+			productName = windowshopAppTests;
+			productReference = 7600ADD024E0B1DB00B71FA5 /* windowshopAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -129,6 +183,10 @@
 				TargetAttributes = {
 					7600ADAD24DFD1CE00B71FA5 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					7600ADCF24E0B1DB00B71FA5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7600ADAD24DFD1CE00B71FA5;
 					};
 				};
 			};
@@ -146,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				7600ADAD24DFD1CE00B71FA5 /* windowshopApp */,
+				7600ADCF24E0B1DB00B71FA5 /* windowshopAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +220,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7600ADCE24E0B1DB00B71FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -169,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7600ADB624DFD1CE00B71FA5 /* MainVC.swift in Sources */,
+				7600ADDB24E0B21B00B71FA5 /* wage.swift in Sources */,
 				7600ADCB24E0566600B71FA5 /* itemsTextField.swift in Sources */,
 				7600ADB224DFD1CE00B71FA5 /* AppDelegate.swift in Sources */,
 				7600ADC924E041B000B71FA5 /* vctextfields.swift in Sources */,
@@ -176,7 +243,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7600ADCC24E0B1DB00B71FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7600ADD324E0B1DB00B71FA5 /* windowshopAppTests.swift in Sources */,
+				7600ADDC24E0B4CB00B71FA5 /* wage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7600ADD624E0B1DB00B71FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7600ADAD24DFD1CE00B71FA5 /* windowshopApp */;
+			targetProxy = 7600ADD524E0B1DB00B71FA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7600ADB724DFD1CE00B71FA5 /* Main.storyboard */ = {
@@ -348,6 +432,46 @@
 			};
 			name = Release;
 		};
+		7600ADD824E0B1DB00B71FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH48NLQR9Y;
+				INFOPLIST_FILE = windowshopAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zando.windowshopAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/windowshopApp.app/windowshopApp";
+			};
+			name = Debug;
+		};
+		7600ADD924E0B1DB00B71FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH48NLQR9Y;
+				INFOPLIST_FILE = windowshopAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zando.windowshopAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/windowshopApp.app/windowshopApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -365,6 +489,15 @@
 			buildConfigurations = (
 				7600ADC324DFD1D200B71FA5 /* Debug */,
 				7600ADC424DFD1D200B71FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7600ADD724E0B1DB00B71FA5 /* Build configuration list for PBXNativeTarget "windowshopAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7600ADD824E0B1DB00B71FA5 /* Debug */,
+				7600ADD924E0B1DB00B71FA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
