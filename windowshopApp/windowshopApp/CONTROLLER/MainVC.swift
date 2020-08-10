@@ -24,7 +24,7 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         restFunc()
         
-        let calculatebutton = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 70))
+        let calculatebutton = UIButton(frame: CGRect(x: 0, y: 70, width: view.frame.size.width, height: 70))
         
         calculatebutton.setTitle("Claculate", for: .normal)
         calculatebutton.setTitleColor(.init(white: 1.0, alpha: 0.87), for: .normal)

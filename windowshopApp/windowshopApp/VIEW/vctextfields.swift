@@ -8,17 +8,34 @@
 
 import UIKit
 
-
 @IBDesignable class vctextfields: UITextField {
     
+    override func draw(_ rect: CGRect) {
+        let currencylabel = UILabel(frame: CGRect(x: CGFloat(5), y: CGFloat(frame.size.width / 2 - 10), width: 20, height: 20))
+        
+        // MARK: Create label
+        currencylabel.backgroundColor = UIColor.white.withAlphaComponent(0.97)
+        currencylabel.textColor = UIColor.black
+        currencylabel.textAlignment = .center
+        currencylabel.layer.cornerRadius = 7.5
+        currencylabel.clipsToBounds = true
+        
+        // MARK: get the currency format of the country
+      
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = .current
+        currencylabel.text = formatter.internationalCurrencySymbol
+        
+          self.addSubview(currencylabel)
+    }
     override func prepareForInterfaceBuilder() {
        customizedView()
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         customizedView()
-        
     }
     
     func customizedView()
@@ -37,9 +54,6 @@ import UIKit
         
         keyboardAppearance = .dark
         keyboardType = .decimalPad
-        
-        
-        
     }
     
 }
